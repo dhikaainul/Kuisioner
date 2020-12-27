@@ -6,6 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kuesioner extends Model
 {
-    protected $table = 'kuesioner';
-    protected $fillable = ['jawaban Quesioner 1','jawaban Quesioner 2','jawaban Quesioner 3','jawaban Quesioner 4','jawaban Quesioner 5'];
+    protected $fillable = ['nim_mhs','nama_mhs','kelas','no_abs','jwb1','jwb2','jwb3','jwb4','jwb5'];
 }

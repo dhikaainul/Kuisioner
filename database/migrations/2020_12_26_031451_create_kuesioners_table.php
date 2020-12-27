@@ -14,13 +14,16 @@ class CreateKuesionersTable extends Migration
     public function up()
     {
         Schema::create('kuesioners', function (Blueprint $table) {
-            $table->bigIncrements('id');
-
-            $table->char('jawaban Quesioner 1')->nullable();
-            $table->char('jawaban Quesioner 2')->nullable();
-            $table->char('jawaban Quesioner 3')->nullable();
-            $table->char('jawaban Quesioner 4')->nullable();
-            $table->char('jawaban Quesioner 5')->nullable();
+            $table->engine = 'InnoDB';
+            $table->integer('nim_mhs')->primary();
+            $table->string('nama_mhs');
+            $table->string('kelas');
+            $table->integer('no_abs');
+            $table->integer('jwb1');
+            $table->integer('jwb2');
+            $table->integer('jwb3');
+            $table->integer('jwb4');
+            $table->integer('jwb5');
             $table->timestamps();
         });
     }

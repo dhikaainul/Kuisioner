@@ -18,6 +18,8 @@ Route::get('/', function () {
 
 Route::get('/home2', 'WebController@home');
 Route::get('/kuesioner', 'KuesionerController@kuesioner')->name('kuesioner');
+Route::get('/hasilkuesioner', 'KuesionerController@hasilkuesioner')->name('hasilkuesioner');
+Route::post('/createkuesioner','KuesionerController@createkuesioner')->name('createkuesioner');
 
 Auth::routes();
 
